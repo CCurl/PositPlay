@@ -4,8 +4,6 @@
 #include <string.h>
 #include "Posit.h"
 
-int es = 2;
-
 // *********************************************************************
 void process_arg(char *arg)
 {
@@ -32,6 +30,12 @@ int main(int argc, char **argv)
         }
     }
 
-    printf("All done.");
+    posit_config(1);
+    printf(" %d, %ld", es, useed);
+    posit_config(2);
+    printf(" %d, %ld", es, useed);
+    posit_config(3);
+    printf(" %d, %ld", es, useed);
+    printf(" All done.");
     return 0;
 }
