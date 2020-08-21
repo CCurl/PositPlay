@@ -19,3 +19,5 @@ extern ULONG useed;
 
 ULONG pow2(int);
 void posit_config(int);
+void posit_dump(ULONG, BYTE);
+void posit_dump8(POSIT_8);

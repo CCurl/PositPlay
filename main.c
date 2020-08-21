@@ -1,7 +1,6 @@
 #include <stdio.h>
-#include <stdarg.h>
 #include <stdlib.h>
-#include <string.h>
+#include <stdarg.h>
 #include "Posit.h"
 
 // *********************************************************************
@@ -30,12 +29,12 @@ int main(int argc, char **argv)
         }
     }
 
-    posit_config(1);
-    printf(" %d, %ld", es, useed);
     posit_config(2);
-    printf(" %d, %ld", es, useed);
+    posit_dump(0x83, 8); printf("\n");
+    posit_config(2);
+    posit_dump(0x39b3, 16); printf("\n");
     posit_config(3);
-    printf(" %d, %ld", es, useed);
+    posit_dump(0x7e,8); printf("\n");
     printf(" All done.");
     return 0;
 }
